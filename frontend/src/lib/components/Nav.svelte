@@ -3,21 +3,48 @@
 	function move() {
 		window.location.href="../3js"
 	}
-	function home() {
-		window.location.href="/"
+	function goToHome() {
+		goto('/');
+	}
+	function goToAbout(){
+		goto('/about');
 	}
 </script>
 
 <nav class="navbar">
-	<p style="padding-left: 10px; color:white; font-weight:bold;">Decorating Phone Case</p>
-
+	<p class="title">Phone Deco</p>
+	<div class="navMove">
+	<span on:click={goToHome} class="home">Home</span>
+	<span on:click={goToAbout} class="about">About</span>
+	</div>
 </nav>
 
 <style>
+	.navMove{
+		display: flex;
+		cursor: pointer;
+		color: white;
+		font-weight: bold;
+		margin-left: auto;
+		margin-right: 8vw;
+		gap: 7vw;
+	}
 	.navbar {
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
-		background: rgb(118, 53, 223);
+		background: rgb(214, 152, 185);
+		height: 10vh;
+		padding: 0 1rem;
+	}
+	.title{
+		font-size: 5vh;
+		padding-left: 1vw;
+		color: white;
+		font-weight: bold;
+		text-shadow:
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;		
 	}
 </style>

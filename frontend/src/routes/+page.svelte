@@ -28,14 +28,13 @@
 	.main {
 		height: 100%;
 		width: 100%;
-		background-color: #dddddd;
+		/* background-color: #dddddd; */
 	}
     .main_div {
         display: flex;  
         flex-direction: column;
     }
 	#container {
-		/* background-image: url('$lib/imgs/main_pic.png'); */
 		background-repeat: no-repeat;
 		width: 100%;
 		background-size: cover;

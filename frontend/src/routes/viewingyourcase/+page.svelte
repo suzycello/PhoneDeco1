@@ -21,17 +21,6 @@
 
 	$: showViewingButton = selectedColor !== 'none' && selectedImg !== 'none';
 
-	// function toggleOption(option: string) {
-	// 	if (selectedColor === 'none') selectedColor = 'white';
-
-	// 	if (toggleState === option) {
-	// 		toggleState = 'none';
-	// 		selectedColor = 'white';
-	// 		selectedImg = 'none';
-	// 	} else {
-	// 		toggleState = option;
-	// 	}
-	// }
     function toggleOption(option: string) {
 		// 'Decorating' 옵션을 선택하고 색상이 선택되지 않은 경우
 		if (option === 'decorate' && selectedColor === 'none') {
