@@ -144,7 +144,7 @@
 	   /* border: 1px solid black; */
 	   border-radius: 50%;
 	   cursor: pointer;
-	   font-size: 1.4rem;
+	   font-size: 1.4vw;
 	   transition: 1s;
 	   opacity: 0; /* 처음에는 보이지 않도록 */
 	   animation: fadeIn 1s forwards; /* 2초 동안 천천히 나타남 */
@@ -168,20 +168,9 @@
 	   border: none;
 	}
 	#colors {
-	   display: none;
-	}
-   
-	#imgs {
-	   display: none;
-	}
-	/* #viewing {
-	   display: none;
-	} */
-   
-	#colors {
 	   display: flex;
-	   gap: 100px;
-	   max-width: 70vw;
+	   gap: 8vw;
+	   max-width: 100vw;
 	   position: absolute;
 	   bottom: 4vh;
 	   left: 50%;
@@ -204,7 +193,7 @@
 	   background-color: rgb(214, 152, 185);
 	   color: white;
 	   cursor: pointer;
-	   font-size: 1.4rem;
+	   font-size: 1.4vw;
 	   display: block;
 	   white-space: nowrap;
 	}

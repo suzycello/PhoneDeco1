@@ -30,7 +30,7 @@
 <div class="content">
 <div class="introduce">
     <div class="centerText">
-    <b style="font-style:italic; font-size:1.5rem;">"개성 있는 휴대폰 케이스, 우리의 손끝에서 탄생합니다."</b><br><br><br>
+    <b style="font-style:italic; font-size:1.6vw;">"개성 있는 휴대폰 케이스, 우리의 손끝에서 탄생합니다."</b><br><br><br>
     </div>
 
     이 웹 앱은 단순히 기성품 케이스를 선택하는 것을 넘어서 사용자가 직접 색상과 디자인을 정하여 자신만의 케이스를 창조할 수 있는 창의적인 경험을 제공합니다.<br><br>
@@ -47,13 +47,12 @@
     .content {
     display: flex;
     margin-top: 10vh;
-    gap: 16vw;
 }
     body{
         background-color: white;
     }
     .introduce{
-        font-size:1.2rem;
+        font-size:1.2vw;
         margin-left: 5vw;
         width: 80%;
         max-width: 800px;
@@ -62,12 +61,13 @@
     .centerText{
         text-align: center;
     }
-    .image-container {
-        max-width: 400px;
-    }
+    .image-container { /* 새로운 컨테이너 클래스 */
+      margin-left: auto;
+      margin-right:auto;
+  }
     .caseImage {
         width: 15vw;
-        max-width: 400px;
+        max-width: 70vw;
         height: auto;
     }
 </style>

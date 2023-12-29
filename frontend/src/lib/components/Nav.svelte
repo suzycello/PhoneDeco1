@@ -21,6 +21,7 @@
 
 <style>
 	.navMove{
+		font-size: 1.1vw;
 		display: flex;
 		cursor: pointer;
 		color: white;

@@ -71,7 +71,7 @@
 		width: 30%;
 		height: 40%;
 		background-color: whitesmoke;
-		font-size: 20px;
+		font-size: 1.5vw;
 		font-weight: bold;
 		visibility: hidden; /* 초기에는 숨김 */
         opacity: 0; /* 투명도 설정 */
@@ -88,7 +88,7 @@
 	    50% { opacity: 0; }
 	}
 	#designText{
-		font-size:2rem;
+		font-size:2.3vw;
       	font-weight: bold;
 		text-shadow:
         -1px -1px 0 #000,  
@@ -100,7 +100,7 @@
 	}
 	
 	#spacebarText{
-		font-size:1.3rem;
+		font-size:1.3vw;
 	    animation: blink 1.5s infinite;
 		color: rgb(145, 145, 145);
 	}
@@ -108,12 +108,12 @@
 	#start {
 		background-color:  rgb(214, 152, 185);
 		color: white;
-		padding: 10px 20px;
+		padding: 1.5vh 1.5vw;
 		border: none;
 		border-radius: 5px;
 		margin-top: 8vh;
 		cursor: pointer;
-		font-size: 15px;
+		font-size: 1vw;
 		display: inline;
 		font-weight: bold;
 	}
