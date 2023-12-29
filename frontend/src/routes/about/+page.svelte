@@ -55,7 +55,7 @@
         font-size:1.2vw;
         margin-left: 5vw;
         width: 80%;
-        max-width: 800px;
+        max-width: 60vw;
         word-wrap: break-word; /* 단어 단위로 줄바꿈 */
     }
     .centerText{
