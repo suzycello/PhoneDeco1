@@ -81,10 +81,10 @@
 		font-weight: bold;
 		text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 		color:rgb(184, 214, 243);
-		margin-left:15vw;
+		margin-left:12.5vw;
 	}
 	#designText{
-		margin-left: 14vw;
+		margin-left: 11.5vw;
 		margin-top:8vh;
 		font-size:2vw;
 		font-weight: bold;
