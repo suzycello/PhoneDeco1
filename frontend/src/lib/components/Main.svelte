@@ -61,7 +61,7 @@
 	   margin-top: 25vh;
 	   /* margin-left: 10vw; */
 	   opacity: 0; /* 처음에는 보이지 않도록 */
-	   animation: fadeIn 2s forwards; /* 2초 동안 천천히 나타남 */
+	   animation: fadeIn 4s forwards; /* 2초 동안 천천히 나타남 */
 	}
 	@keyframes fadeIn {
 	   to {
