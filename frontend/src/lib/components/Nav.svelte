@@ -10,7 +10,7 @@
 		goto('/about');
 	}
 </script>
-
+<div class="container">
 <nav class="navbar">
 	<p class="title">Phone Deco</p>
 	<div class="navMove">
@@ -18,6 +18,7 @@
 	<span on:click={goToAbout} class="about">About</span>
 	</div>
 </nav>
+</div>
 
 <style>
 	.navMove{
@@ -34,18 +35,16 @@
 		display: flex;
 		align-items: center;
 		background: rgb(214, 152, 185);
+		/* background: rgb(188, 187, 187); */
 		height: 10vh;
 		padding: 0 1rem;
+		z-index: 1;
 	}
 	.title{
 		font-size: 5vh;
 		padding-left: 1vw;
 		color: white;
 		font-weight: bold;
-		text-shadow:
-        -1px -1px 0 #000,  
-         1px -1px 0 #000,
-        -1px  1px 0 #000,
-         1px  1px 0 #000;		
+		 display: var(--title-display, block); /* 기본적으로 보이게 설정 */	
 	}
 </style>

@@ -4,6 +4,11 @@ import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
 
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { ColladaLoader, OrbitControls } from 'three/examples/jsm/Addons.js';
+export type PositionType = {
+  x: number;
+  y: number;
+  z: number;
+};
 
 let camera: THREE.PerspectiveCamera, scene: THREE.Scene, renderer: THREE.WebGLRenderer;
 const mixers: any = [];
