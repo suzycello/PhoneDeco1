@@ -2,8 +2,6 @@
 	import Nav from '$lib/components/Nav.svelte';
 	import { changeColor, clearContext, loadAndTransformModel, phonecase, putStickers } from '$lib/utils/phonecase';
 	import { onMount } from 'svelte';
-	import { goto } from '$app/navigation';
-	import {casenumber,stickername} from '$lib/utils/store';
 	$: toggleState = 'none';
 	$: selectedColor = 'none';
 	$: selectedImg = 'none';
@@ -64,12 +62,14 @@
 		changeColor(selectedColor)
 	   };
 	 }
+	 
    
 	onMount(() => {
 	   phonecase(3);
-   
-	   return () => clearContext();
-	});
+    return () => {
+	  clearContext();
+    };
+  });
    </script>
    
    <Nav></Nav>

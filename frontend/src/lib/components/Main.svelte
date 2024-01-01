@@ -1,27 +1,29 @@
 <script lang="ts">
-	// import Nav from './Nav.svelte';
-	import {clearContext, phonecase} from '$lib/utils/phonecase';
+	import {phonecase, clearContext} from '$lib/utils/mainPhone';
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
-  
+
+	let scene, camera, renderer, model;
+	
 	
 	onMount(() => {
-	   phonecase(3);
-	    // 키보드 이벤트 리스너 추가
-        window.addEventListener('keydown', handleKeyDown);
+		phonecase(3);
+		// 키보드 이벤트 리스너 추가
+		window.addEventListener('keydown', handleKeyDown);
 
-        // 컴포넌트가 언마운트될 때 정리 함수 반환
-        return () => {
-            clearContext();
-            window.removeEventListener('keydown', handleKeyDown); // 이벤트 리스너 정리
-        };
-    });
+		// 컴포넌트가 언마운트될 때 정리 함수 반환
+		return () => {
+		clearContext();
+		window.removeEventListener('keydown', handleKeyDown); // 이벤트 리스너 정리
+		};
+	});
 
-    function handleKeyDown(event) {
-        if (event.key === ' ') { // spacebar의 key 값은 ' '
-            goto('/decoratephonecase'); // spacebar가 눌리면 navigate
-        }
-    }
+	function handleKeyDown(event: KeyboardEvent) {
+		if (event.key === ' ') { // spacebar의 key 값은 ' '
+		// 스페이스바가 눌리면 '/decoratephonecase'로 이동하고 새로고침
+		window.location.href = '/decoratephonecase';
+		}
+	}
 
   
 	</script>
@@ -42,7 +44,7 @@
 	.canvas {
 		position: absolute;
 		top: 0;
-		left: 25%;
+		left: 0;
 		z-index: -1;
 		height: 100%;
 		width: 100%;
@@ -52,7 +54,7 @@
 		height: 100vh;
 	} */
 	:global(.navbar .title) {
-	   --title-display: none; /* Main.svelte에서 title을 숨깁니다 */
+	   --title-display: none;
 	}
 	.text {
 	   display: flex;

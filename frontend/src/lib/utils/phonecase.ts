@@ -90,7 +90,7 @@ function init(id: any) {
 
       // mesh.castShadow = false;
       // mesh.receiveShadow = false;
-      mesh.position.set(0, 0, 0);
+      mesh.position.set(0, 0, 0); // phone 위치
       mesh.rotation.set(Math.PI, 0, 0);
       scene.add(mesh); //phone 불러오기
       console.log(gltf);
