@@ -134,7 +134,7 @@ function animate() {
    if (mesh) {
     // Y축을 중심으로 모델을 회전시킵니다.
     // 0.01은 회전 속도를 나타내며, 필요에 따라 조정할 수 있습니다.
-    mesh.rotation.y += 0.008;
+    mesh.rotation.y -= 0.008;
 }
 
    controls.update();
