@@ -4,24 +4,24 @@
     import { page } from '$app/stores';
   
     onMount(() => {
-    const unsubscribe = page.subscribe(() => {
-      // 특정 경로에서만 작동하도록 조건을 설정합니다.
-      if (window.location.pathname === '/about') {
-        // 로컬 스토리지에서 'reloaded' 플래그를 확인합니다.
-        if (!localStorage.getItem('reloaded')) {
-          // 플래그가 설정되지 않았다면, 페이지를 새로고침하고 플래그를 설정합니다.
-          localStorage.setItem('reloaded', 'true');
-          window.location.reload();
-        } else {
-          // 페이지가 이미 새로고침되었다면, 'reloaded' 플래그를 제거합니다.
-          localStorage.removeItem('reloaded');
-        }
-      }
-    });
+    // const unsubscribe = page.subscribe(() => {
+    //   // 특정 경로에서만 작동하도록 조건을 설정합니다.
+    //   if (window.location.pathname === '/about') {
+    //     // 로컬 스토리지에서 'reloaded' 플래그를 확인합니다.
+    //     if (!localStorage.getItem('reloaded')) {
+    //       // 플래그가 설정되지 않았다면, 페이지를 새로고침하고 플래그를 설정합니다.
+    //       localStorage.setItem('reloaded', 'true');
+    //       window.location.reload();
+    //     } else {
+    //       // 페이지가 이미 새로고침되었다면, 'reloaded' 플래그를 제거합니다.
+    //       localStorage.removeItem('reloaded');
+    //     }
+    //   }
+    // });
 
-    return () => {
-      unsubscribe();
-    };
+    // return () => {
+    //   unsubscribe();
+    // };
   });
 </script>
   
