@@ -9,11 +9,11 @@
 	const colors = ['white', 'black', 'DodgerBlue', 'gold', 'purple', 'pink'];
 	const imgs = [
 	   '/images/mary.png',
+	   '/images/pooh.png',
 	   '/images/ryan.png',
-	   '/images/mickey2.png',
-	   '/images/도라에몽.png',
+	   '/images/마이멜로디2.png',
 	   '/images/어피치.png',
-	   '/images/맹구2.png',
+	   '/images/도라에몽.png',
 	   '/images/흰둥이.png'
 	];
    
